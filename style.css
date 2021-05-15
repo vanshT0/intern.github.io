@@ -1,0 +1,609 @@
+body {
+  margin: 0;
+  overflow: scroll;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #e8f1ff;
+  position: relative;
+}
+@font-face {
+  font-family: circular;
+  src: url(Circular\ Std\ Font.otf);
+}
+
+.nav-bar {
+  /* padding-top: 50px; */
+  display: flex;
+  height: 25px;
+  width: 100%;
+}
+
+.nav-items {
+  padding-top: 50px;
+  padding-left: 160px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  color: #272d4e;
+}
+.nav-items:hover {
+  cursor: pointer;
+  
+
+}
+
+.menu-bar-item-selected {
+  padding-right: 35px;
+  
+}
+
+.menu-bar-item {
+  padding-right: 35px;
+}
+
+.side-button {
+  display: flex;
+  justify-content: center;
+  padding-left: 400px;
+}
+
+.login-button {
+  padding-top: 50px;
+}
+.login {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #272d4e;
+  font-weight: 550;
+  font-size: 18px;
+  font-family: Roboto;
+}
+
+.started-button {
+  padding-left: 35px;
+  display: flex;
+  padding-top: 38px;
+}
+.btn-primary,
+.btn-primary:focus {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  height: 47px;
+  width: 120px;
+  border-radius: 8px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-primary:active {
+  color: #fff;
+  background-color: #0a58ca;
+  border-color: #0a53be;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+  cursor: pointer;
+}
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.title-main {
+  padding-top: 100px;
+  padding-left: 140px;
+}
+
+.secondary-container {
+  display: flex;
+  padding-top: 69px;
+}
+
+.title-head {
+  color: #272d4e;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 110%;
+  font-family: Circular "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title-summary {
+  padding-top: 30px;
+  color: #94a2b3;
+}
+
+.title-buttons {
+  display: flex;
+  padding-top: 30px;
+}
+
+.store-start-button {
+  background-color: #7854f7;
+  color: white;
+  height: 60px;
+  width: 200px;
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customize-extend:hover {
+  cursor: pointer;
+  color: rgb(48, 17, 224);
+  transition: linear 600ms;
+}
+.store-start-button:hover {
+  cursor: pointer;
+  background-color: rgb(48, 17, 224);
+  transition: linear 600ms;
+}
+
+.or {
+  color: #94a2b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.customize-extend {
+  color: #299ef3;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-dots {
+  padding-top: 80px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-one-scale {
+  position: absolute;
+  width: 230.4px;
+  height: 170px;
+  border-radius: 20px;
+}
+.image-one-scale:hover {
+  transform: scale(1.05);
+  transition: linear 600ms;
+}
+
+.image-two-scale {
+  margin-left: 70px;
+  margin-top: 80px;
+  position: absolute;
+  width: 353.54px;
+  height: 300px;
+  border-radius: 20px;
+}
+.image-two-scale:hover {
+  transform: scale(1.05);
+  transition: linear 600ms;
+}
+
+.sale-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: white;
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 285px;
+  width: 107.14px;
+  background: #70c217;
+  border-radius: 37.7902px;
+}
+.sale-button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: linear 600ms;
+}
+
+.circle {
+  position: absolute;
+  width: 60.64px;
+  height: 60.64px;
+  margin-top: 310px;
+  margin-left: 44.5px;
+  background: #ffba49;
+  border-radius: 37.7902px;
+}
+.circle:hover {
+  transform: scale(1.05);
+  transition: linear 600ms;
+  background-color: #272d4e;
+}
+.toggle-switches {
+  background-color: white;
+  position: absolute;
+  width: 340px;
+  height: 175px;
+  margin-top: 310px;
+  margin-left: 150px;
+  border-radius: 23.4905px;
+}
+
+.stripe,
+.paypal {
+  width: 100%;
+  height: 33%;
+  border-bottom: 1px solid #e5efff;
+  border-radius: 23.4905px;
+}
+
+.stripe-logo {
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 50px;
+  height: 20px;
+}
+
+.paypal-logo {
+  margin-top: 5px;
+  margin-left: 40px;
+  width: 50px;
+  height: 35px;
+}
+
+.stripe-logo:hover,
+.paypal:hover {
+  cursor: pointer;
+}
+.stripe-text,
+.paypal-text,
+.bank-text {
+  margin-left: 20px;
+  height: 50px;
+  width: 5px;
+  color: #94a2b3;
+  font-size: 14px;
+}
+.banktransfer {
+  margin-top: 20px;
+}
+
+.bank-text {
+  margin-left: 114px;
+  height: 50px;
+  width: 5px;
+  color: #94a2b3;
+  font-size: 14px;
+}
+
+.toggle-difff {
+  margin-left: 32px;
+}
+
+.toggle {
+  margin-left: 30px;
+}
+.toggle-diff {
+  margin-left: 20px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 22px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #dae5f7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #70c217;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #70c217;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.adidas {
+  width: 200px;
+  height: 310px;
+  background-color: white;
+  margin-left: 424px;
+  margin-top: 80px;
+}
+
+.adidas-container {
+  margin-top: 37px;
+  margin-left: 37px;
+}
+
+.title-adidas {
+  font-size: 12px;
+}
+.summary-adidas {
+  font-size: 21px;
+  padding-top: 13px;
+  font-weight: 600;
+}
+
+.size-adidas {
+  padding-top: 32px;
+  display: flex;
+}
+.sizes {
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+  color: #868686;
+  margin-right: 7px;
+}
+
+.sizes:hover {
+  cursor: pointer;
+  background-color: rgb(41, 147, 182);
+  transition: linear 600ms;
+  color: white;
+}
+
+.bottom {
+  display: flex;
+  padding-top: 15px;
+}
+
+.price-adidas {
+  margin-right: 17px;
+}
+.price-real {
+  color: #7854f7;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.price-dis {
+  text-decoration: line-through;
+}
+
+.quantity-adidas {
+  display: flex;
+  align-items: center;
+  width: 102.28px;
+  height: 33.98px;
+
+  background-color: #f6f6f6;
+  border-radius: 5px;
+}
+
+.qt {
+  width: 34px;
+  height: 11.3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  font-weight: 700;
+}
+.qt:hover {
+  cursor: pointer;
+}
+
+.addto {
+  width: 136.12px;
+  height: 37.18px;
+  background: #7854f7;
+  margin-left: -133px;
+  margin-top: 62px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addto:hover {
+  cursor: pointer;
+  background-color: rgb(48, 17, 224);
+  transition: linear 600ms;
+}
+
+.third-cont {
+  height: 125vh;
+  width: 100%;
+  padding-top: 80px;
+  background-color: #e8f1ff;
+}
+
+.third-title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: inherit;
+  text-align: center;
+  color: #272d4e;
+}
+
+.final-images {
+  padding-top: 75px;
+  padding-left: 140px;
+  display: flex;
+}
+
+.image-prim-1 {
+  position: absolute;
+}
+.image-1 {
+  width: 400px;
+  height: 340px;
+}
+
+.image-sec {
+  position: absolute;
+}
+.image-12 {
+  width: 202px;
+  height: 316px;
+  margin-left: -70px;
+  margin-top: 56px;
+}
+
+.image-apple {
+  position: absolute;
+  width: 68px;
+  height: 47px;
+  margin-left: -163px;
+  margin-top: 31px;
+}
+
+.text-title {
+  padding-top: 336px;
+}
+
+.final-title {
+  color: #272d4e;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.summ-title {
+  padding-top: 8px;
+  color: #94a2b3;
+}
+
+.click-title {
+  padding-top: 12px;
+  color: #299ef3;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.click-title:hover {
+  cursor: pointer;
+  color: rgb(48, 17, 224);
+  transition: linear 600ms;
+}
+
+.image-2 {
+  padding-top: 65px;
+  margin-left: -37px;
+}
+
+.image21,
+.image-22,
+.image-23,
+.image-24,
+.image-25 {
+  position: absolute;
+  width: 126px;
+  height: 107px;
+}
+
+.image21 {
+  margin-left: 52px;
+  margin-top: -354px;
+}
+.image-22 {
+  margin-left: 52px;
+  margin-top: -230px;
+}
+.image-23 {
+  margin-left: 232px;
+  margin-top: -302px;
+}
+.image-24 {
+  margin-left: 191px;
+  margin-top: -210px;
+}
+.image-25 {
+  margin-left: 147px;
+  margin-top: -112px;
+}
+
+.image-3 {
+  padding-top: 130px;
+  margin-left: -37px;
+}
+
+.image-32,
+.image-33,
+.image-31 {
+  position: absolute;
+}
+
+.image-31 {
+  width: 158px;
+  height: 132px;
+  margin-left: 35px;
+  margin-top: -368px;
+}
+.image-32 {
+  width: 145px;
+  height: 117px;
+  margin-left: 209px;
+  margin-top: -421px;
+}
+.image-33 {
+  width: 173px;
+  height: 130px;
+  margin-left: 251px;
+  margin-top: -242px;
+}
